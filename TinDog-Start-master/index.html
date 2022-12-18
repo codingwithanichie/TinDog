@@ -18,9 +18,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
   <!--BootStrap scripts-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,7 +30,7 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="">TinDog</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,12 +49,11 @@
   </nav>
 
 
-
     <!-- Title -->
 
     <div class = "row">
       <div class = "col-lg-6">
-        <h1>Meet new and interesting dogs nearby.</h1>
+        <h1 class = "big-heading">Meet new and interesting dogs nearby.</h1>
       <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>
       <button type="button" class="btn btn-outline-light btn-lg download-button"><i class = "fab fa-google-play"></i>Download</button>
       </div>
@@ -105,7 +102,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
       <div class="carousel-inner">
         <div class="carousel-item active" >
-          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <h2 class = "testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
           <img class = "testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
           <em>Pebbles, New York</em>
 
@@ -146,7 +143,7 @@
 
   <section id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
+    <h2 class = "section-heading">A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
   <div class="row">
@@ -154,10 +151,10 @@
 
     <div class = "card">
       <div class = "card-header">
-        <h3>Chihuahua</h3>
+        <h3 class = "pricing-name">Chihuahua</h3>
       </div>
       <div class = "card-body">
-        <h2>Free</h2>
+        <h2 class = "price-text">Free</h2>
         <p>5 Matches Per Day</p>
         <p>10 Messages Per Day</p>
         <p>Unlimited App Usage</p>
@@ -170,10 +167,10 @@
       
   <div class = "card">
     <div class = "card-header">
-      <h3>Labrador</h3>
+      <h3 class = "pricing-name">Labrador</h3>
     </div>
     <div class = "card-body">
-      <h2>$49 / mo</h2>
+      <h2 class = "price-text">$49 / mo</h2>
       <p>Unlimited Matches</p>
       <p>Unlimited Messages</p>
       <p>Unlimited App Usage</p>
@@ -187,10 +184,10 @@
       
 <div class = "card">
   <div class = "card-header">
-    <h3>Mastiff</h3>
+    <h3 class = "pricing-name">Mastiff</h3>
   </div>
   <div class = "card-body">
-    <h2>$99 / mo</h2>
+    <h2 class = "price-text">$99 / mo</h2>
     <p>Pirority Listing</p>
     <p>Unlimited Matches</p>
     <p>Unlimited Messages</p>
@@ -211,9 +208,14 @@
 
   <section id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <div class = "row find-section">
+      <div class = "col">
+        <h3 class = "action-font">Find the True Love of Your Dog's Life Today.</h3>
+        <button type="button" class = "btn btn-lg btn-dark download-button2"><i class="fab fa-apple"></i>Download</button>
+        <button type="button" class = "btn btn-lg btn-light download-button2"><i class = "fab fa-google-play"></i>Download</button>
+      </div>
+    </div>
+    
 
   </section>
 
@@ -222,7 +224,17 @@
 
   <footer id="footer">
 
-    <p>© Copyright TinDog</p>
+    <div class = "footer-text">
+    <div class = "row">
+      <div class = "col">
+        <i id = "footer-spacing" class="fab fa-snapchat"></i>
+        <i id = "footer-spacing" class="fab fa-instagram"></i>
+        <i id = "footer-spacing" class="fab fa-twitter"></i>
+        <i id = "footer-spacing" class="fab fa-facebook"></i>
+      </div>
+    </div>
+    <p>© Copyright 2022 TinDog</p>
+  </div>
 
   </footer>
 

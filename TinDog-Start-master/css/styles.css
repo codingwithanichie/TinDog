@@ -1,25 +1,56 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans HK';
+}
 
+/* First Section */
 #title {
     background-color: #ff4c68;
     color: #fff;
     font-family: 'Noto Sans HK', sans-serif;
+    text-align: left;
 }
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+/* Headings */
+
+.big-heading {
+    font-family: 'Noto Sans HK';
+    font-size: 3.5rem;  
+    line-height: 1.5;  
+    font-weight: 900;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Features */
+
 #features {
     padding: 7% 15%;
     background-color: #fff;
     position: relative;
     z-index: 1;
-}
-
-.title-image {
-    width: 20%;
-    transform: rotate(25deg);
-    position: absolute;
-    right: 30%;
 }
 
 #logo-work {
@@ -31,13 +62,56 @@ body {
     color: #ff4c68:
 }
 
+.bold-text {
+    font-size: 25px;
+}
+
+
+/* Call to Action */
+
+.action-font {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.find-section {
+    background-color: #ff4c68;
+    padding: 2% 2% 0;
+    font-family: 'Noto Sans HK';  
+   
+    font-weight: 900;
+}
+
+.download-button2 {
+    margin: 2% 0 5% 1%;
+    font-size: 1rem;
+}
+
+/* Title section */
+
+.title-image {
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+
 /* Testimonial Section */
 
 #testimonials {
     padding: 7% 15%;
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -46,9 +120,15 @@ body {
     margin: 20px;
 }
 
+.carousel-item {
+    padding: 7% 15%;
+}
+
+
+/* Press section */
+
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -57,26 +137,6 @@ body {
     margin: 20px 20px 50px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
-
-.container-fluid {
-    padding: 3% 15% 7%;
-}
-
-h1 {  
-    font-family: 'Noto Sans HK';
-    font-size: 3.5rem;  
-    line-height: 1.5;  
-    font-weight: 900;
-}
-
-h2 {
-    font-family: 'Noto Sans HK';
-    font-size: 3rem;
-    line-height: 1.5;
-}
 
 /* Navigation Bar */
 .navbar {
@@ -94,32 +154,37 @@ h2 {
 }
 
 .nav-link {
-    font-size: "Montserrat-Light";
     position:relative;
     left:500px;
-}
-
-/* Download Buttons */
-
-.download-button {
-    margin: 5% 3% 5% 0;
-}
-
-/* Title IMAGE */
-
-
-
-.bold-text {
-    font-size: 25px;
 }
 
 /* pricing section */
 
 #pricing {
     padding: 100px;
-    text-align: center;
+}
+
+.pricing-name {
+    font-size: 1.5rem;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-column {
     padding: 3% 2%;
+}
+
+
+/* Footer */
+
+#footer-spacing {
+    margin: 10px;
+}
+
+.footer-text {
+    font-family: 'Noto Sans HK';
+    padding: 2%;
 }
